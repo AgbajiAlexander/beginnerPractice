@@ -73,7 +73,6 @@ func main() {
 	// }
 
 	//multiple switch cases
-
 	familyMembers := 10
 
 	switch familyMembers {
