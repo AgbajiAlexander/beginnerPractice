@@ -28,47 +28,58 @@ func main() {
 	// fmt.Printf("the length of the new slice is = %d\n", len(price2))
 	// fmt.Printf("the capacity of the new slice is = %d\n", cap(price2))
 
-// 	newArray := [13]int{1,2,3,4,4,5,5,6,6,6,6,2,4}
-// 	newSlice := newArray[4:12]
+	// 	newArray := [13]int{1,2,3,4,4,5,5,6,6,6,6,2,4}
+	// 	newSlice := newArray[4:12]
 
-// 	fmt.Printf("new sclice = %v\n", newSlice)
-// 	fmt.Printf("length of new slice = %d\n", len(newSlice))
-// 	fmt.Printf("capacity of the new slice = %d\n", cap(newSlice))
-// fmt.Println()
-// newSlice = newArray[1:4] // Change length by re-slicing the array
-//   	fmt.Printf("the re sliced = %v\n", newSlice)
-//   	fmt.Printf("length = %d\n", len(newSlice))
-//   	fmt.Printf("capacity = %d\n", cap(newSlice))
-// fmt.Println()
-// newSlice = append(newSlice, 20, 21, 22, 23) // Change length by appending items
-//   fmt.Printf("myslice1 = %v\n", newSlice)
-//   fmt.Printf("length = %d\n", len(newSlice))
-//   fmt.Printf("capacity = %d\n", cap(newSlice))
+	// 	fmt.Printf("new sclice = %v\n", newSlice)
+	// 	fmt.Printf("length of new slice = %d\n", len(newSlice))
+	// 	fmt.Printf("capacity of the new slice = %d\n", cap(newSlice))
+	// fmt.Println()
+	// newSlice = newArray[1:4] // Change length by re-slicing the array
+	//   	fmt.Printf("the re sliced = %v\n", newSlice)
+	//   	fmt.Printf("length = %d\n", len(newSlice))
+	//   	fmt.Printf("capacity = %d\n", cap(newSlice))
+	// fmt.Println()
+	// newSlice = append(newSlice, 20, 21, 22, 23) // Change length by appending items
+	//   fmt.Printf("myslice1 = %v\n", newSlice)
+	//   fmt.Printf("length = %d\n", len(newSlice))
+	//   fmt.Printf("capacity = %d\n", cap(newSlice))
 
-familyMembers := 11
+	// familyMembers := 11
 
-switch familyMembers {
-case 1:
-	fmt.Println ("Godswill is the first Son")
-case 2:
-	fmt.Println ("Alexander is the Second Son")
-case 3:
-	fmt.Println ("Edwin is the third Son")
-case 4:
-	fmt.Println ("Ruth is the First Daughter")
-case 5:
-	fmt.Println ("Helen is the second daughter")
-case 6: 
-	fmt.Println ("Innocent is the fourth Son")
-case 7:
-	fmt.Println ("Gideon is the fifth Son")
-case 8:
-	fmt.Println("Aaron is the sixth Son")
-case 9:
-fmt.Println("Blessing is the third Daughter")
-case 10:
-	fmt.Println("Ezekiel is the seventh Son")
-default:
-	fmt.Println("Is not a member of the family")
-}
+	// switch familyMembers {
+	// case 1:
+	// 	fmt.Println ("Godswill is the first Son")
+	// case 2:
+	// 	fmt.Println ("Alexander is the Second Son")
+	// case 3:
+	// 	fmt.Println ("Edwin is the third Son")
+	// case 4:
+	// 	fmt.Println ("Ruth is the First Daughter")
+	// case 5:
+	// 	fmt.Println ("Helen is the second daughter")
+	// case 6:
+	// 	fmt.Println ("Innocent is the fourth Son")
+	// case 7:
+	// 	fmt.Println ("Gideon is the fifth Son")
+	// case 8:
+	// 	fmt.Println("Aaron is the sixth Son")
+	// case 9:
+	// fmt.Println("Blessing is the third Daughter")
+	// case 10:
+	// 	fmt.Println("Ezekiel is the seventh Son")
+	// default:
+	// 	fmt.Println("Is not a member of the family")
+	// }
+
+	familyMembers := 10
+
+	switch familyMembers {
+	case 1, 2, 3, 6, 7, 8, 10:
+		fmt.Println("One of the boys in the family")
+	case 4, 5, 9:
+		fmt.Println("One the girls in the family")
+	default:
+		fmt.Println("Is not a member of the family")
+	}
 }
