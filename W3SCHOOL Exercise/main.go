@@ -72,6 +72,8 @@ func main() {
 	// 	fmt.Println("Is not a member of the family")
 	// }
 
+	//multiple switch cases
+
 	familyMembers := 10
 
 	switch familyMembers {
