@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	// arry := [3]int {0:12,1:13}
 	// var cars = [6]string {"benz", "honda", "mazda", "gis", "toyota", "inoson"}
@@ -134,11 +130,15 @@ func main() {
 	// 	}
 	// }
 
-	for i := 0; i < 10; i++ {
-		if i == 3 {
-			fmt.Printf("the value of i is %d\n", i)
-		} else {
-			fmt.Printf("the value of i is %d\n", i)
-		}
-	}
+	// for i := 0; i < 10; i++ {
+	// 	if i == 3 {
+	// 		fmt.Printf("the value of i is %d\n", i)
+	// 	} else {
+	// 		fmt.Printf("the value of i is %d\n", i)
+	// 	}
+	// }
+
+	//func ToUpperLastWord(words []string) []string
+	// var words = []string{"hello", "world", "golang", "programming"}
+
 }
