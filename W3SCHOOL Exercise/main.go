@@ -72,7 +72,7 @@ func main() {
 	// 	fmt.Println("Is not a member of the family")
 	// }
 
-	//multiple switch cases
+	//working with multiple switch cases
 	familyMembers := 10
 
 	switch familyMembers {
@@ -82,5 +82,24 @@ func main() {
 		fmt.Println("One the girls in the family")
 	default:
 		fmt.Println("Is not a member of the family")
+	}
+
+	// working with loops
+	// for i := 0; i < 10; i++ {
+	// 	fmt.Printf("the value of i is %d\n", i)
+	// }
+
+	// for i := 0; i < 10; i++ {
+	// 	if i == 5 {
+	// 		break
+	// 	}
+	// 	fmt.Printf("the value of i is %d\n", i)
+	// }
+
+	for i := 0; i < 10; i++ {
+		if i == 5 {
+			continue
+		}
+		fmt.Printf("the value of i is %d\n", i)
 	}
 }
