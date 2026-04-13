@@ -177,4 +177,7 @@ func main() {
 	for _, words := range words {
 		fmt.Println(words)
 	}
+
+	combined := strings.Join(words, "-")
+	fmt.Println("Combined words with hyphens:", combined)
 }
