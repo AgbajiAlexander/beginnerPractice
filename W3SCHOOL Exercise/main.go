@@ -152,28 +152,69 @@
 
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
+func Upper(w string) string {
+	s := strings.Split(w, " ")
+	for i := 0; i < len(s); i++ {
+		if s[i] == "(up)" {
+			if i > 0 {
+				s[i-1] = strings.ToUpper(s[i-1])
+			}
+			s = append(s[:i], s[i+1:]...)
+			break
+		}
+	}
+	return strings.Join(s, " ")
+
+}
+
+func Lower(w string) string {
+	s := strings.Split(w, " ")
+	for i := 0; i < len(s); i++ {
+		if s[i] == "(low)" {
+			if i > 0 {
+				s[i-1] = strings.ToLower(s[i-1])
+			}
+			s = append(s[:i], s[i+1:]...)
+			break
+		}
+	}
+	return strings.Join(s, " ")
+
+}
+
 func main() {
-	// text := "Learning Go is powerful"
-	// words := strings.Split(text, " ")
+	text := "Learning Go is powerful thing"
+	//words := strings.Split(text, " ")
 
-	// fmt.Println("Words in text:")
-	// for _, word := range words {
-	// 	fmt.Println(word)
-	// }
+	//fmt.Println(text)
+	for _, words := range text {
+		fmt.Println(words)
+	}
 
-	// joined := strings.Join(words, "_")
-	// fmt.Println("Joined with underscores:", joined)
+	words := strings.Split(text, " ")
+	fmt.Println(words)
 
-	// Splitting the sentence into words
+	fmt.Println(Upper("Learning Go is (low) powerful (up) thing"))
+
+	//joined := strings.Join(words, " ")
+
+	//fmt.Println("Joined with spaces:", joined)
+
+	// //Splitting the sentence into words
 	// sentence := "Go makes coding fun"
 	// words := strings.Split((sentence), " ")
 
 	// fmt.Println("Original words in the sentence provided:")
 	// for _, words := range words {
 	// 	fmt.Println(words)
-	// }
-
-	// combined := strings.Join(words, "-")
-	// fmt.Println("Combined words with hyphens:", combined)
-
 }
+
+// combined := strings.Join(words, "-")
+// fmt.Println("Combined words with hyphens:", combined)
+
+// }
