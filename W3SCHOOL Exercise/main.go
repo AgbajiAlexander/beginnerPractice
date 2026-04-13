@@ -168,6 +168,8 @@ func main() {
 
 	// joined := strings.Join(words, "_")
 	// fmt.Println("Joined with underscores:", joined)
+
+	// Splitting the sentence into words
 	sentence := "Go makes coding fun"
 	words := strings.Split((sentence), " ")
 
