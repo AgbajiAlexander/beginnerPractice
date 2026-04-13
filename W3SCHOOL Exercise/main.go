@@ -152,11 +152,6 @@
 
 package main
 
-import (
-	"fmt"
-	"strings"
-)
-
 func main() {
 	// text := "Learning Go is powerful"
 	// words := strings.Split(text, " ")
@@ -170,14 +165,15 @@ func main() {
 	// fmt.Println("Joined with underscores:", joined)
 
 	// Splitting the sentence into words
-	sentence := "Go makes coding fun"
-	words := strings.Split((sentence), " ")
+	// sentence := "Go makes coding fun"
+	// words := strings.Split((sentence), " ")
 
-	fmt.Println("Original words in the sentence provided:")
-	for _, words := range words {
-		fmt.Println(words)
-	}
+	// fmt.Println("Original words in the sentence provided:")
+	// for _, words := range words {
+	// 	fmt.Println(words)
+	// }
 
-	combined := strings.Join(words, "-")
-	fmt.Println("Combined words with hyphens:", combined)
+	// combined := strings.Join(words, "-")
+	// fmt.Println("Combined words with hyphens:", combined)
+
 }
