@@ -58,11 +58,11 @@ func process(text string) string {
 		}
 
 		// HANDLE (up), (low), (cap)
-		if strings.HasPrefix(words[i], "(up") ||
+		if strings.HasPrefix(words[i], "(up") || // what does this do? it checks if the word starts with (up, which means it can be (up) or (up,2) etc.
 			strings.HasPrefix(words[i], "(low") ||
 			strings.HasPrefix(words[i], "(cap") {
 
-			mode, count := parseInstruction(words[i])
+			mode, count := parseInstruction(words[i]) // this function will return the mode (up, low, cap) and the count (number of words to transform)
 
 			start := i - count
 			if start < 0 {
